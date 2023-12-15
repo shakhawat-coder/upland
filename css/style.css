@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: .8;
+}
+menu,ol,ul{
+    list-style-type: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.common_button{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 27.2px */
+    text-transform: capitalize;
+    display: inline-flex;
+    padding: 16px 35px 17px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: linear-gradient(270deg, rgba(255, 169, 121, 0.99) 0%, rgba(255, 98, 49, 0.99) 100%);
+
+    box-shadow: 0px 5px 10px 0px rgba(252, 104, 58, 0.25);
+}
+
+
+/* =================navbar section=================== */
+#navbar{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 70px;
+    display: flex;
+    align-items: center;
+
+}
+#navbar menu{
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+}
+#navbar menu li a {
+    position: relative;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+#navbar menu li a:hover{
+    color:  #FF6231;
+}
+#navbar menu li a::after{
+    position: absolute;
+    content: "";
+    background: rgba(255, 255, 255, 0.50);
+    height: 4px;
+    width: 4px;
+    right: -30px;
+    top: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#navbar menu li:last-child a::after {
+    background: none;
+}
+#navbar menu li .popupBtn{
+    color:  #FF6231;
+    font-family: Roboto;
+    font-size: 16px;
+    display: flex;
+    padding: 4px 20px;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    border: 2px solid  #FF6231;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#navbar .contact_num a{
+    color: #FFF;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* ==================banner section=================== */
+#banenr{
+    padding: 256px 0 278px;
+}
+.banner_wrapper{
+    position: relative;
+}
+.banner_content h6{
+    position: relative;
+    padding-left: 30px;
+    color: var(--main-color, #FF6231);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 20.4px */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.banner_content h6::after{
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    left: 0;
+    top: 8px;
+    background: #FF6231;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.banner_content h6::before{
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    left: 10px;
+    top: 8px;
+    background: #FF6231;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.banner_content h1{
+    width: 667px;
+    color: #FFF;
+    font-family: Darker Grotesque;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90%; /* 72px */
+    text-transform: capitalize;
+}
+.banner_content p{
+    padding: 30px 0 50px;
+    width: 550px;
+    color: #FFF;
+    font-family: Darker Grotesque;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 30.8px */
+}
+
+.banner_image{
+    position: absolute;
+    top: -139px;
+    right: 30px;
+}
