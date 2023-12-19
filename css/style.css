@@ -38,7 +38,8 @@ menu,ol,ul{
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 170%; /* 27.2px */
+    color: #FF6231;
+    line-height: 170%;
     text-transform: capitalize;
     display: inline-flex;
     padding: 16px 35px 17px 35px;
@@ -46,11 +47,19 @@ menu,ol,ul{
     align-items: center;
     gap: 10px;
     border-radius: 30px;
+    border: 2px solid #FF6231;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+.common_button:hover{
+    color: #ffffff;
     background: linear-gradient(270deg, rgba(255, 169, 121, 0.99) 0%, rgba(255, 98, 49, 0.99) 100%);
-
+    border: 2px solid transparent;
     box-shadow: 0px 5px 10px 0px rgba(252, 104, 58, 0.25);
 }
-
 .section_header{
     position: relative;
 }
@@ -75,11 +84,6 @@ menu,ol,ul{
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
-    /* transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%); */
 }
 
 /* =================navbar section=================== */
@@ -306,10 +310,12 @@ menu,ol,ul{
 #info .info_wrapper .info_content{
     width: 457px;
 }
-#info .info_wrapper .info_content .section_header h2{
+#info .info_wrapper .info_content .section_header h2,
+#download .section_header h2{
     text-align: left;
 }
-#info .info_wrapper .info_content .section_header h3{
+#info .info_wrapper .info_content .section_header h3,
+#download .section_header h3{
     left: 0;
 }
 #info .info_wrapper .info_content p{
@@ -331,5 +337,166 @@ menu,ol,ul{
     color: #FF6231;
     font-style: 20px;
 }
-#info .info_wrapper {}
-#info .info_wrapper {}
+/* ==============slider section================== */
+#slider{
+    padding: 375px 0 53px;
+    /* position: relative; */
+}
+#slider .section_header{
+    padding-bottom: 50px;
+}
+#slider .section_header h3{
+    left: 249px;
+}
+#slider .slider{
+    position: relative;
+}
+#slider .prev i,#slider .next i{
+    font-size: 40px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#slider .prev{
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+#slider .next{
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+#slider .slider_item img{
+    height: 690px;
+    width: 327px;
+}
+
+/* =============download section=========== */
+#download{
+    padding: 160px 0;
+}
+#download .download_wrapper{
+    display: flex;
+    /* justify-content: space-between; */
+}
+#download .download_wrapper .download_item{
+    width: 550px;
+}
+#download .download_wrapper .download_item .download_content{
+    width: 457px;
+}
+#download .download_wrapper .download_item .download_content .common_p{
+    padding: 30px 0 50px;
+}
+#download .download_wrapper .download_item .download_content .download_option{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#download .download_wrapper .download_item .download_content .download_option p{
+    font-family: var(--roboto);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+}
+#download .download_wrapper .download_item .download_content .download_option p span{
+    display: block;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 170%;
+text-transform: uppercase;
+}
+#download .download_wrapper .download_item.plan{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+#download .download_wrapper .download_item.plan .basic{
+    width: 240px;
+}
+#download .download_wrapper .download_item.plan .popular{
+    width: 260px;
+}
+#download .download_wrapper .download_item.plan h6{
+    color: var(--main-color, #FF6231);
+    font-family: var(--roboto);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; 
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+#download .download_wrapper .download_item.plan p{
+    color: #000;
+    font-family: var(--roboto);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+}
+#download .download_wrapper .download_item.plan p sup{
+    color: #000;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+}
+#download .download_wrapper .download_item.plan span{
+    position: relative;
+    color: var(--text-color, #888);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; 
+    padding-bottom: 12px;
+}
+#download .download_wrapper .download_item.plan span::after{
+    position: absolute;
+    content: "";
+    width: 240px;
+    border: 1px dashed rgba(84, 55, 178, 0.3);
+    bottom: 0;
+    left: 0;
+
+}
+#download .download_wrapper .download_item.plan menu{
+    margin-top: 30px;
+}
+#download .download_wrapper .download_item.plan menu li{
+    position: relative;
+    padding-left: 12px;
+    color: var(--text-color, #888);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; 
+}
+#download .download_wrapper .download_item.plan menu li:hover{
+    font-weight: 700;
+}
+#download .download_wrapper .download_item.plan menu li::before{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #FF6231;
+    left: 0px;
+    top: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
