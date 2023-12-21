@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Darker+Grotesque:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url(./post.css);
 :root {
     --codystar: "Codystar", sans-serif;
     --Grotesque: "Darker Grotesque", sans-serif;
@@ -198,7 +199,7 @@ footer menu li .popupBtn {
     line-height: normal;
 }
 /* ==================banner section=================== */
-#banenr {
+#banner {
     padding: 256px 0 278px;
 }
 .banner_wrapper {
@@ -792,17 +793,17 @@ details > summary:first-of-type {
 #blog .blog_item .common_p {
     padding: 25px 0 30px;
 }
-#blog .blog_item .info {
+ .info {
     display: flex;
     align-items: center;
     column-gap: 24px;
 }
-#blog .blog_item .info .author_info {
+ .info .author_info {
     display: flex;
     column-gap: 10px;
     align-items: center;
 }
-#blog .blog_item .info .author_info .author_image {
+ .info .author_info .author_image {
     width: 20px;
     height: 20px;
     background: #bd93d8;
@@ -812,7 +813,7 @@ details > summary:first-of-type {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-#blog .blog_item .info .author_info span {
+.info .author_info span {
     position: relative;
     color: var(--text-color, #888);
     font-family: var(--roboto);
@@ -821,7 +822,7 @@ details > summary:first-of-type {
     font-weight: 400;
     line-height: 170%;
 }
-#blog .blog_item .info .author_info span::after {
+.info .author_info span::after {
     position: absolute;
     content: "";
     width: 4px;
@@ -840,10 +841,10 @@ details > summary:first-of-type {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
-#blog .blog_item .info .share_link i {
+ .info .share_link i {
     margin-right: 10px;
 }
-#blog .blog_item .info .share_link span {
+.info .share_link span {
     color: var(--text-color, #888);
     font-family: var(--roboto);
     font-size: 14px;
