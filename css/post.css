@@ -61,7 +61,7 @@
 #post .post_body_wrapper .post_wrapper .post_image{
    width: 100%;
    height: 400px;
-   background: #CCC;
+   background: #E6EBFC;
    border-radius: 20px;
    -webkit-border-radius: 20px;
    -moz-border-radius: 20px;
@@ -71,7 +71,7 @@
 #post .post_body_wrapper .post_wrapper .info{
    padding: 30px 0;
    margin-bottom: 40px;
-   border-bottom: 1px dashed #CCC;
+   border-bottom: 1px dashed #5437B2;
 }
 #post .post_body_wrapper .post_wrapper .post_content h2{
     color: #000;
@@ -91,7 +91,8 @@
     background: #FFF;
     box-shadow: 0px 10px 20px 0px rgba(47, 21, 135, 0.06);
     position: relative;
-   padding: 50px 70px 50px 50px ;
+    padding: 50px 70px 50px 50px ;
+    margin-bottom: 40px;
 }
 #post .post_body_wrapper .post_wrapper .post_content .quote p{
     color: var(--text-color, #888);
@@ -115,7 +116,102 @@
     right: 40px;
     bottom: 50px;
 }
-#post .post_body_wrapper .post_wrapper{
+#post .post_body_wrapper .post_wrapper .post_content h4{
+    color: #000;
+    font-family: var(--Grotesque);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    padding-bottom: 30px;
+}
+#post .post_body_wrapper .post_wrapper .post_content menu{
+   padding: 20px 0 40px;
+}
+#post .post_body_wrapper .post_wrapper .post_content menu li{
+   margin: 0 0 20px 20px;
+}
+#post .post_body_wrapper .post_wrapper .post_content .tags{
+   display: flex;
+   align-items: center;
+   column-gap: 26px;
+   padding: 20px 0;
+   border-bottom: 1px dashed #5437B2;
+
+}
+#post .post_body_wrapper .post_wrapper .post_content .tags p{
+    color: #000;
+    font-family: var(--Roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+}
+#post .post_body_wrapper .post_wrapper .post_content .tags span{
+    color: var(--text-color, #888);
+    font-family: var(--Roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; 
+    position: relative;
+}
+#post .post_body_wrapper .post_wrapper .post_content .tags span:last-child::after{
+    display: none;
+}
+#post .post_body_wrapper .post_wrapper .post_content .author{
+    margin: 40px 0 90px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(47, 21, 135, 0.06);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+#post .post_body_wrapper .post_wrapper .post_content .author .feature_shap{
+    position: relative;
+}
+#post .post_body_wrapper .post_wrapper .post_content .author .feature_shap>img{
+    width: 184px;
+    height: 204px;
+}
+#post .post_body_wrapper .post_wrapper .post_content .author .feature_shap .feature_img{
+   height: 110px;
+   width: 110px;
+   background: #CEA6DC;
+   position: absolute;
+    top: 47px;
+    left: 38px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+#post .post_body_wrapper .post_wrapper .post_content .author .author_information{
    
+}
+#post .post_body_wrapper .post_wrapper .post_content .author .author_information h4{
+    color: #000;
+    font-family: var(--Grotesque);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    padding-bottom: 15px;
+}
+#post .post_body_wrapper .post_wrapper .post_content .author .author_information a{
+    color: var(--text-color, #888);
+    font-family: var(--Roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+#post .post_body_wrapper .post_wrapper .post_content .author .author_information .social{
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
 }
 #post .post_body_wrapper .sidebar{}
