@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Darker+Grotesque:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 @import url(./post.css);
 @import url(./blog.css);
+@import url(./error.css);
 
 :root {
     --codystar: "Codystar", sans-serif;
@@ -799,17 +800,20 @@ details > summary:first-of-type {
 #blog .blog_item .common_p {
     padding: 25px 0 30px;
 }
- .info {
+ .info,
+ .comment_wrapper .user_info{
     display: flex;
     align-items: center;
     column-gap: 24px;
 }
- .info .author_info {
+ .info .author_info,
+ .comment_wrapper .author_info{
     display: flex;
     column-gap: 10px;
     align-items: center;
 }
- .info .author_info .author_image {
+ .info .author_info .author_image,
+ .comment_wrapper .author_image {
     width: 20px;
     height: 20px;
     background: #bd93d8;
@@ -819,7 +823,9 @@ details > summary:first-of-type {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.info .author_info span {
+.info .author_info span,
+.comment_wrapper .user_name,
+.comment_wrapper .comment_date {
     position: relative;
     color: var(--text-color, #888);
     font-family: var(--roboto);
@@ -829,7 +835,9 @@ details > summary:first-of-type {
     line-height: 170%;
 }
 .info .author_info span::after,
-#post .post_body_wrapper .post_wrapper .post_content .tags span::after {
+#post .post_body_wrapper .post_wrapper .post_content .tags span::after,
+#post .post_body_wrapper .post_wrapper .post_content .author .author_information a::after ,
+#post .post_body_wrapper .post_wrapper .post_content .comment_wrapper span::after{
     position: absolute;
     content: "";
     width: 4px;
