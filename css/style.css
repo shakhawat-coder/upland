@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Darker+Grotesque:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 @import url(./post.css);
+@import url(./blog.css);
+
 :root {
     --codystar: "Codystar", sans-serif;
     --Grotesque: "Darker Grotesque", sans-serif;
@@ -22,6 +24,8 @@ h5,
 h6,
 p {
     line-height: 0.8;
+    margin: 0;
+    padding: 0;
 }
 menu,
 ol,
