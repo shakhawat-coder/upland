@@ -837,12 +837,13 @@ details > summary:first-of-type {
 .info .author_info span::after,
 #post .post_body_wrapper .post_wrapper .post_content .tags span::after,
 #post .post_body_wrapper .post_wrapper .post_content .author .author_information a::after ,
-#post .post_body_wrapper .post_wrapper .post_content .comment_wrapper span::after{
+#post .post_body_wrapper .post_wrapper .post_content .comment_wrapper .comment .author_info span::after,
+#post .post_body_wrapper .sidebar .blog_post_tag_list a::after{
     position: absolute;
     content: "";
     width: 4px;
     height: 4px;
-    right: -12px;
+    right: -14px;
     top: 50%;
     background: #ff6231;
     border-radius: 50%;

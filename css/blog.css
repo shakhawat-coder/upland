@@ -2,7 +2,13 @@
 #blog_page {
     padding: 90px 0 160px 0;
 }
+#blog_page .blog_body_wrapper{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
 .blog_post_main_wrapper {
+    width: 828px;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
