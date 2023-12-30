@@ -145,5 +145,10 @@
     color: #cccccc;
     font-size: 32px;
 }
+.blog_post_theory_main_wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
 
 /* ===== blog section css end here ===== */
